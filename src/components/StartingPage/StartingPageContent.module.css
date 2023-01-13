@@ -1,0 +1,22 @@
+.starting {
+  margin: 0rem auto;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/yasratcha-bg.jpg");
+  height: 82vh;
+  background-size: cover;
+}
+
+.starting h1 {
+  font-size: 3rem;
+  color: rgb(255, 247, 232, 0.5);
+}
+
+@media (max-width: 767px) {
+  .starting {
+    /* margin-top: 30px; */
+    height: 83vh;
+  }
+  .starting h1 {
+    font-size: 2rem;
+  }
+}
