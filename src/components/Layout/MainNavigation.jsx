@@ -38,19 +38,25 @@ const MainNavigation = () => {
         >
           {!isLoggedIn && (
             <li>
-              <Link to="/auth">Login</Link>
+              <Link onClick={handleClick} to="/auth">
+                Login
+              </Link>
             </li>
           )}
 
           {isLoggedIn && (
             <li>
-              <Link to="/all-characters">All Characters</Link>
+              <Link onClick={handleClick} to="/all-characters">
+                All Characters
+              </Link>
             </li>
           )}
 
           {isLoggedIn && (
             <li>
-              <Link to="/new-character">Add Character</Link>
+              <Link onClick={handleClick} to="/new-character">
+                Add Character
+              </Link>
             </li>
           )}
 

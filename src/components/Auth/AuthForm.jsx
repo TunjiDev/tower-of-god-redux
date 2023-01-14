@@ -82,6 +82,8 @@ const AuthForm = () => {
         setIsLoading(false);
         if (res.ok) {
           // console.log(res.json());
+          resetEmailInput();
+          resetPasswordInput();
           return res.json();
         } else {
           return res.json().then((data) => {
@@ -107,8 +109,8 @@ const AuthForm = () => {
         }, 3000);
       });
 
-    resetEmailInput();
-    resetPasswordInput();
+    // resetEmailInput();
+    // resetPasswordInput();
   };
 
   const emailInputClasses = emailInputHasError ? `${styles.control} ${styles.invalid}` : `${styles.control}`;
